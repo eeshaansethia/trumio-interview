@@ -8,7 +8,9 @@ const TodoSchema = mongoose.Schema({
     },
     status: {
         type: String,
-        required: true
+        enum: ['Open', 'Complete'],
+        required: true,
+        default: 'Open'
     }
 }, {
     timestamp: true

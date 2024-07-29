@@ -16,7 +16,7 @@ app.use(cors())
 
 const todoRoute = require('./routes/todo')
 
-const uri = 'mongodb://localhost:27017/'
+const uri = 'mongodb://localhost:27017/trumio'
 
 mongoose.connect(uri).then(() => {
     console.log('connect to mongoDB')
